@@ -1,0 +1,21 @@
+Compilacion: 
+g++ -fopenmp main.cpp -o SimAnn
+./SimAnn.exe
+
+Pseudo-codigo:
+Algorithm for placement
+Algorithm SIMULATED-ANNEALING
+
+Begin
+temp = INIT-TEMP;
+place = INIT-PLACEMENT;
+while (temp > FINAL-TEMP) do
+    while (inner_loop_criterion = FALSE) do
+        new_place = PERTURB(place);
+        ΔC = COST(new_place)  - COST(place);
+        if (ΔC < 0) then
+            place = new_place;
+        else if (RANDOM(0,1) < e-(ΔC/temp)) then
+            place = new_place;
+    temp = SCHEDULE(temp);
+End.

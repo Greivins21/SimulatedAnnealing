@@ -19,3 +19,5 @@ while (temp > FINAL-TEMP) do
             place = new_place;
     temp = SCHEDULE(temp);
 End.
+Valor fitness: 4560565644648
+This is temperature: 67799.8

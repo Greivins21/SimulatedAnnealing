@@ -97,7 +97,7 @@ int main(int argc, char* argv[]){
     long double prob_cambio_peor; 
     int temp_iter=1;
     int cant_ite_enfriamiento;
-    if (argc>1){
+    if (argc>0){
         cant_ite_enfriamiento = atoi(argv[1]);
     }else{ 
         cant_ite_enfriamiento = 1000; 

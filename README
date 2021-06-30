@@ -1,27 +1,22 @@
 Compilacion: 
-g++ -fopenmp main.cpp -o SimAnn
-./SimAnn.exe
+g++ main.cpp -o SimAnn
+./SimAnn cant_iteraciones_enfriamiento
 
-Pseudo-codigo:
-Algorithm for placement
-Algorithm SIMULATED-ANNEALING
+cant_iteraciones_enfriamiento: es la cantidad de soluciones a buscar antes de disminuir la temperatura
+Ej: 10 100 1000, etc
 
-10 iteraciones antes de cambiar temperatura 
-This is temperature: 9.79143
-Mejor solucion encontrada: 1839112452978
-S1: 1362540, s2: 2108785, s3: 1027217
+400 iteraciones intercambio tres digitos al azar
+Mejor valor fitness encontrado: 11931030073302
+S1: 1665321230, s2: 1664005204, s3: 1664887230
 
-100 iteraciones antes de cambiar temperatura 
-This is temperature: 9.79143
-Mejor solucion encontrada: 824560084746
-S1: 1899789, s2: 1430760, s3: 1167993
+400 iteraciones tres digitos entre ellos
+Mejor valor fitness encontrado: 327370306488
+S1: 1664911438, s2: 1664780026, s3: 1664522200
 
-1000 iteraciones antes de cambiar temperatura
-This is temperature: 9.79143
-Mejor solucion encontrada: 908884698750
-S1: 1899789, s2: 1122414, s3: 1476339
+400 iteraciones intercambiando dos digitos al azar
+Mejor valor fitness encontrado: 76096120248
+S1: 1664812965, s2: 1664642165, s3: 1664758534
 
-10 000 iteraciones
-This is temperature: 9.79143
-Mejor solucion encontrada: 898155265086
-S1: 1480605, s2: 1122414, s3: 1895523
+400 iteraciones intercambiando digitos entre ellos
+Mejor valor fitness encontrado: 40607341758
+S1: 1664712320, s2: 1664681963, s3: 1664819381

@@ -1,22 +1,16 @@
 Compilacion: 
 g++ main.cpp -o SimAnn
+
+Ejecución: 
 ./SimAnn cant_iteraciones_enfriamiento
+
+Nota: la cantidad de iteraciones totales es 516 x parametro 
+Dado que la temperatura disminuye 516 veces antes de detenerse. 
 
 cant_iteraciones_enfriamiento: es la cantidad de soluciones a buscar antes de disminuir la temperatura
 Ej: 10 100 1000, etc
 
-400 iteraciones intercambio tres digitos al azar
-Mejor valor fitness encontrado: 11931030073302
-S1: 1665321230, s2: 1664005204, s3: 1664887230
-
-400 iteraciones tres digitos entre ellos
-Mejor valor fitness encontrado: 327370306488
-S1: 1664911438, s2: 1664780026, s3: 1664522200
-
-400 iteraciones intercambiando dos digitos al azar
-Mejor valor fitness encontrado: 76096120248
-S1: 1664812965, s2: 1664642165, s3: 1664758534
-
-400 iteraciones intercambiando digitos entre ellos
-Mejor valor fitness encontrado: 40607341758
-S1: 1664712320, s2: 1664681963, s3: 1664819381
+1500 iteraciones
+Mejor valor fitness encontrado: 31214245416
+Tiempo de ejecucion: 6722 segundos.
+S1: 1664724129, s2: 1664748739, s3: 1664740796

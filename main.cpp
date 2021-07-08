@@ -147,7 +147,7 @@ int main(int argc, char* argv[]){
         cant_ite_enfriamiento = 100; 
     }
     
-    long int cuarto = TEMP_INICIAL/4;
+    long int mitad = TEMP_INICIAL/2;
     auto tiempo_Inicio = chrono::high_resolution_clock::now();
     vector<vector<int>> solucion_actual = inicializacion();
     long double valor_ideal =0;
@@ -163,10 +163,10 @@ int main(int argc, char* argv[]){
     //comienza el algoritmo. 
     while (temp > TEMP_FINAL){
         for (int i =0 ; i< cant_ite_enfriamiento; i ++){ 
-            if (temp<cuarto){
-                nueva_solucion = solucion_vecina(nueva_solucion);
+            if (temp<mitad){
+                nueva_solucion = solucion_vecina(nueva_solucion); //evalua cambiando una piedra
             }else{
-                nueva_solucion = solucion_vecina2(nueva_solucion);
+                nueva_solucion = solucion_vecina2(nueva_solucion); //evalua cambiando varias piedras
             }
 
             nuevo_fitness = fitness_function(nueva_solucion);
